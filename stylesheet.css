@@ -10,14 +10,15 @@
      --drop-shadow-focus: black;
      --color-one: hsl(0, 0%, 96%);
      --color-two: hsl(235, 35%, 53%);
+     --UI-gray-contrast: #DDD;
     }
 
     #Einstellungsleiste{
         border: var(--stroke-with) solid var(--UI-gray-dark);
-        border: var(--stroke-with) solid #777;
+        border: var(--stroke-with) solid var(--UI-gray-contrast);
     }
     .basic-dropdown{
-        border: var(--stroke-with) solid #777;
+        border: var(--stroke-with) solid var(--UI-gray-contrast);
     }
 }
 
@@ -31,6 +32,11 @@
      --drop-shadow-focus: rgb(173, 173, 173);
      --color-one: #2d3133;
      --color-two: hsl(235, 35%, 53%);
+     --UI-gray-contrast: #333;
+    }
+
+    .basic-dropdown{
+        border: none;
     }
 }
 
@@ -438,8 +444,8 @@ input[type="range"]:focus { outline: none; }
     -webkit-appearance: none; /* Für Safari */
     -moz-appearance: none; /* Für Firefox */
     
-    color: #777;
-    order-radius: calc(var(--radius)/2);
+    color: var(--UI-gray-contrast);
+    border-radius: calc(var(--radius)/2);
     background-color: var(--background-color);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     padding: 0%;
@@ -468,10 +474,10 @@ input[type="range"]:focus { outline: none; }
 }
 
 .basic-checkbox{
-    outline: var(--stroke-with) solid #777;
+    outline: var(--stroke-with) solid var(--UI-gray-contrast);
     outline-offset: -2px;
     border-radius: 0;
-    accent-color: #777;
+    accent-color: var(--UI-gray-contrast);
     cursor: pointer;
 }
 .basic-checkbox:hover{
@@ -480,7 +486,7 @@ input[type="range"]:focus { outline: none; }
 
 .label-exp-sett {
     line-height: 2rem;
-    color: #777;
+    color: var(--UI-gray-contrast);
 }
 
 
