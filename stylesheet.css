@@ -302,6 +302,7 @@ h1 {
 }
 
 input[type="range"] {
+    min-height: 36px !important;
     cursor: pointer;
     /* filter: drop-shadow(0 0 0.1cm var(--drop-shadow)); */
     /* transition: filter 0.2s ease; */
