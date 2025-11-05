@@ -13,7 +13,7 @@
     }
 
     #Einstellungsleiste{
-        border: var(--stroke-with) solid var(--border-color);
+        border: var(--stroke-with) solid var(--UI-gray-light);
     }
 }
 
@@ -281,6 +281,7 @@ h1 {
 
 #Einstellungsleiste{
     width: min(calc(100% - 30px), 1150px);
+    max-width: 100%;
     /* padding sollte kleiner werden wenn bidschirm kleiner wird */
     /* padding-left: 10mm;
     padding-right: 10mm;
