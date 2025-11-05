@@ -285,6 +285,7 @@ h1 {
     padding: 2rem;
 
     margin: 0 auto;
+    border: var(--stroke-with) solid var(--border-color);
     margin-top: 3rem;
     margin-bottom: 3rem;
     border-radius: var(--radius);
