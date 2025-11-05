@@ -11,6 +11,10 @@
      --color-one: hsl(0, 0%, 96%);
      --color-two: hsl(235, 35%, 53%);
     }
+
+    #Einstellungsleiste{
+        border: var(--stroke-with) solid var(--border-color);
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -285,7 +289,6 @@ h1 {
     padding: 2rem;
 
     margin: 0 auto;
-    border: var(--stroke-with) solid var(--border-color);
     margin-top: 3rem;
     margin-bottom: 3rem;
     border-radius: var(--radius);
