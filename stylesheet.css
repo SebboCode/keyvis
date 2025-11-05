@@ -60,6 +60,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-size: 10pt;
+    font-family: 'CabinetGrotesk-Light';
     text-align: center;
     margin: 0;
     color: #777;
