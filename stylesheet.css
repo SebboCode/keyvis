@@ -14,6 +14,10 @@
 
     #Einstellungsleiste{
         border: var(--stroke-with) solid var(--UI-gray-dark);
+        border: var(--stroke-with) solid #777;
+    }
+    .basic-dropdown{
+        border: var(--stroke-with) solid #777;
     }
 }
 
@@ -435,9 +439,9 @@ input[type="range"]:focus { outline: none; }
     -moz-appearance: none; /* Für Firefox */
     
     color: #777;
+    order-radius: calc(var(--radius)/2);
     background-color: var(--background-color);
-    border: var(--stroke-with) solid #777;
-    border-radius: calc(var(--radius)/2);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     padding: 0%;
     height: 24px;
     line-height: 12px;
