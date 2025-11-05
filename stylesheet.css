@@ -13,7 +13,7 @@
     }
 
     #Einstellungsleiste{
-        border: var(--stroke-with) solid var(--UI-gray-light);
+        border: var(--stroke-with) solid var(--UI-gray-dark);
     }
 }
 
