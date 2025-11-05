@@ -332,6 +332,7 @@ input[type="range"]:focus { outline: none; }
     font-size: 20pt;
     color: var(--color-one) !important;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 #Farbvorschau {
