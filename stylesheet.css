@@ -437,6 +437,7 @@ input[type="range"]:focus { outline: none; }
     height: 24px;
     line-height: 12px;
     font-size: 12px; /* Sicherstellen, dass es überall lesbar ist */
+    font-family: CabinetGrotesk-Light;
     padding-left: 5px;
     padding-right: 22px;
 
