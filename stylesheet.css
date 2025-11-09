@@ -224,7 +224,7 @@ h1 {
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
     left: 50%;
-    top: 5px;
+    top: -15px;
     transform: translateX(-50%);
     visibility: hidden; /* Standardmäßig unsichtbar */
 } 
