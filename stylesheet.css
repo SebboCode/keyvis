@@ -290,7 +290,7 @@ h1 {
 
 
 #Einstellungsleiste{
-    width: min(calc(100% - 30px), 1150px);
+    width: min(calc(100% - 7rem), 1150px);
     max-width: 100%;
     /* padding sollte kleiner werden wenn bidschirm kleiner wird */
     /* padding-left: 10mm;
