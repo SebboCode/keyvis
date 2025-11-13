@@ -506,9 +506,9 @@ input[type="range"]:focus { outline: none; }
     font-size: 12px;
   position: sticky;
   top: calc(100vh - 60px);
-  height: 60px;
+  /*height: 60px;*/
   text-align: center;
-  line-height: 60px;
+  line-height: 25px;
 }
 
 .radio-elem {
