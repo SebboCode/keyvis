@@ -83,7 +83,7 @@ function fullscreen(id) {
         document.getElementById(id).classList.add("hide-border-important");
 
         // Text gross machen
-        document.querySelector(".canvas-lable").style.fontSize = "7rem";
+        document.querySelector(".canvas-lable").style.fontSize = "5.5rem";
         
 
         // bugfix für Edge
