@@ -50,11 +50,12 @@
   }
 
   .toggle-switch-small::after {
-    width: calc(10px - 2*var(--stroke-with));
-    height: calc(10px - 2*var(--stroke-with));
+    width: calc(12px - 2*var(--stroke-with));
+    height: calc(12px - 2*var(--stroke-with));
     background-color: transparent;
     border: var(--stroke-with) solid var(--UI-gray-contrast);
-
+    left: 1px;
+    top: 1px;
   }
 
    .toggle-switch-small:checked::after {
