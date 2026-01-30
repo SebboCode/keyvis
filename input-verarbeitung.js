@@ -225,8 +225,25 @@ document.addEventListener("click", (e) => {
 });
 
 function setLinearKey() {
-    
+    // set Key-Type Luminanz
     document.querySelector('input[name="Key-Auswahl"][value="luma"]').checked = true;
     changeKey("luma");
 
+    // set Gain -100
+    // gain_slider.
+    gain = 0
+    document.getElementById("gain-value").innerText = -100;
+
+    // set Clip 100
+    // clip_slider.
+    clip = 1;
+    document.getElementById("clip-value").innerText = 100;
+    
+    // set Density 100
+    // density_slider.
+    density = 100;
+    document.getElementById("density-value").innerText = 100;
+
+
+    berechnen();
 }
