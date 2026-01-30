@@ -82,9 +82,8 @@ function fullscreen(id) {
         // Border ausblenden
         document.getElementById(id).classList.add("hide-border-important");
 
-        // Text gross machen
-        document.querySelector(".canvas-lable").style.fontSize = "5.5rem";
-        
+        // Beschriftungstext gross machen
+        document.querySelector(".canvas-lable").forEach((e) => e.style.fontSize = "5.5rem");
 
         // bugfix für Edge
         if (navigator.userAgent.includes("Edg")) {
@@ -114,6 +113,9 @@ document.addEventListener("fullscreenchange", (event) => {
 
         // Border einblenden
         lastFullscreenEl.classList.remove("hide-border-important");
+
+        // Beschriftungstext klein machen
+        document.querySelector(".canvas-lable").forEach((e) => e.style.fontSize = "1.2rem");
 
         // Safari Bugfix
         if (navigator.userAgent.includes("Safari") && !navigator.userAgent.includes("Chrome")) {
@@ -236,12 +238,12 @@ function setLinearKey() {
     chromaEinstellungen.style.display = "none";
 
     // set Gain -100
-    gain_slider.setValue(0);
+    gain_slider.setValue(-100);
     gain = 0
     document.getElementById("gain-value").innerText = -100;
 
     // set Clip 100
-    clip_slider.setValue(1);
+    clip_slider.setValue(100);
     clip = 1;
     document.getElementById("clip-value").innerText = 100;
     
