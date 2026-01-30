@@ -239,7 +239,7 @@ function setLinearKey() {
 
     // set Gain -100
     gain_slider.setValue(-100);
-    gain = 0
+    gain = 1;
     document.getElementById("gain-value").innerText = -100;
 
     // set Clip 100
