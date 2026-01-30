@@ -224,4 +224,9 @@ document.addEventListener("click", (e) => {
     }
 });
 
-// erklaerDiv.style.display !== "flex" &&
+function setLinearKey() {
+    
+    document.querySelector('input[name="Key-Auswahl"][value="luma"]').checked = true;
+    changeKey("luma");
+
+}
