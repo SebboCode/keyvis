@@ -232,6 +232,7 @@ function setLinearKey() {
     // set Key-Type Luminanz
     document.querySelector('input[name="Key-Auswahl"][value="luma"]').checked = true;
     keyart = "luma";
+    const chromaEinstellungen = document.querySelector("#chomaEinstellungen");
     chromaEinstellungen.style.display = "none";
 
     // set Gain -100
