@@ -83,7 +83,7 @@ function fullscreen(id) {
         document.getElementById(id).classList.add("hide-border-important");
 
         // Beschriftungstext gross machen
-        document.querySelector(".canvas-lable").forEach((e) => e.style.fontSize = "5.5rem");
+        document.querySelectorAll(".canvas-lable").forEach(e => e.style.fontSize = "5.5rem");
 
         // bugfix für Edge
         if (navigator.userAgent.includes("Edg")) {
@@ -115,7 +115,7 @@ document.addEventListener("fullscreenchange", (event) => {
         lastFullscreenEl.classList.remove("hide-border-important");
 
         // Beschriftungstext klein machen
-        document.querySelector(".canvas-lable").forEach((e) => e.style.fontSize = "1.2rem");
+        document.querySelectorAll(".canvas-lable").forEach(e => e.style.fontSize = "1.2rem");
 
         // Safari Bugfix
         if (navigator.userAgent.includes("Safari") && !navigator.userAgent.includes("Chrome")) {
