@@ -227,7 +227,9 @@ document.addEventListener("click", (e) => {
 function setLinearKey() {
     // set Key-Type Luminanz
     document.querySelector('input[name="Key-Auswahl"][value="luma"]').checked = true;
-    changeKey("luma");
+    keyart = "luma";
+    chromaEinstellungen.style.display = "none";
+
 
     // set Gain -100
     // gain_slider.
