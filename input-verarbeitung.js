@@ -230,22 +230,20 @@ function setLinearKey() {
     keyart = "luma";
     chromaEinstellungen.style.display = "none";
 
-
     // set Gain -100
-    // gain_slider.
+    gain_slider.setValue(0);
     gain = 0
     document.getElementById("gain-value").innerText = -100;
 
     // set Clip 100
-    // clip_slider.
+    clip_slider.setValue(1);
     clip = 1;
     document.getElementById("clip-value").innerText = 100;
     
     // set Density 100
-    // density_slider.
+    density_slider.setValue(100);
     density = 100;
     document.getElementById("density-value").innerText = 100;
-
 
     berechnen();
 }
