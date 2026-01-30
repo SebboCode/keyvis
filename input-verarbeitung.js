@@ -82,6 +82,10 @@ function fullscreen(id) {
         // Border ausblenden
         document.getElementById(id).classList.add("hide-border-important");
 
+        // Text gross machen
+        document.querySelector(".canvas-lable").style.fontSize = "7rem";
+        
+
         // bugfix für Edge
         if (navigator.userAgent.includes("Edg")) {
             overlay.style.display = "block";
