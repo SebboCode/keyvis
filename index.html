@@ -217,28 +217,37 @@
 
            
         <!-- Experten einstellungen -->
-        <label for="size-norm-Auswahl" class="label-exp-sett"> Auflösung </label> 
-        <select name="size-Auswahl" id="size-norm-Auswahl" class="basic-dropdown" onchange="changeNormCanvRes(this)">
-            <option value="Klein"> Klein </option>
-            <option value="Mittel" selected> Mittel </option>
-            <option value="HD"> HD </option> 
-            <option value="UHD">UHD</option>
-        </select>
-
-        <br>
-
-        <label for="size-voll-Auswahl" class="label-exp-sett"> Vollbild Auflösung </label>
-         <select name="size-Auswahl" id="size-voll-Auswahl" class="basic-dropdown" onchange="changeFullscreenCanvRes(this)">
-            <option value="Klein"> Klein </option>
-            <option value="Mittel"> Mittel </option>
-            <option value="HD" selected> HD </option> 
-            <option value="UHD">UHD</option>
-        </select>
-
-        <br>
-
-        <label for="Beschr" class="label-exp-sett"> Beschriftungen </label> 
-        <input type="checkbox" class="basic-checkbox" id="Beschr" onclick="beschriftungen(this)">
+         
+            <label for="size-norm-Auswahl" class="label-exp-sett"> Auflösung </label> 
+            <select name="size-Auswahl" id="size-norm-Auswahl" class="basic-dropdown" onchange="changeNormCanvRes(this)">
+                <option value="Klein"> Klein </option>
+                <option value="Mittel" selected> Mittel </option>
+                <option value="HD"> HD </option> 
+                <option value="UHD">UHD</option>
+            </select>
+    
+            <br>
+    
+            <label for="size-voll-Auswahl" class="label-exp-sett"> Vollbild Auflösung </label>
+             <select name="size-Auswahl" id="size-voll-Auswahl" class="basic-dropdown" onchange="changeFullscreenCanvRes(this)">
+                <option value="Klein"> Klein </option>
+                <option value="Mittel"> Mittel </option>
+                <option value="HD" selected> HD </option> 
+                <option value="UHD">UHD</option>
+            </select>
+    
+            <br>
+            
+            <!-- horizontale zentrierung -->
+            <div style="display: flex; justify-content: center;">
+                <!-- vertikale zentrierung -->
+                <div style="display: flex; align-items: center;"> 
+                    <label for="Beschriftungen" class="label-exp-sett"> Beschriftungen </label> 
+                    <input type="checkbox" id="Beschriftungen" class="toggle-switch toggle-switch-small" onclick = "beschriftungen(this)">
+                </div>
+            </div>
+               
+        <!-- <input type="checkbox" class="basic-checkbox" id="Beschr" onclick="beschriftungen(this)"> -->
 
         <!-- <br>
 

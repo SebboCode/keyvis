@@ -8,7 +8,7 @@
     cursor: pointer;
     outline: none;
     transition: background-color 0.1s linear;
-    margin-left: 3mm;
+    margin-left: 0.5rem;
     /* filter: drop-shadow(0 0 0.1cm var(--drop-shadow)); */
     /* box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.6); */
     /* transition: box-shadow 0.1s linear; */
@@ -35,4 +35,33 @@
   
   .toggle-switch:checked::after {
     transform: translateX(20px);
+  }
+
+
+
+
+
+  /* Restyle */
+  .toggle-switch-small {
+    background-color: transparent;
+    width: 32px;
+    height: 17px;
+    border: var(--stroke-with) solid var(--UI-gray-contrast);
+  }
+
+  .toggle-switch-small::after {
+    width: calc(10px - 2*var(--stroke-with));
+    height: calc(10px - 2*var(--stroke-with));
+    background-color: transparent;
+    border: var(--stroke-with) solid var(--UI-gray-contrast);
+
+  }
+
+   .toggle-switch-small:checked::after {
+    transform: translateX(15px);
+    background-color: var(--UI-gray-contrast);
+  }
+
+  .toggle-switch:checked {
+    background-color: transparent;
   }

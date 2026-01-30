@@ -60,74 +60,7 @@ function beschriftungen(elm) {
     });
 }
 
-// function fullscreen(id) {
-//     let elem = document.getElementById(id);
 
-//     // console.log("jetzt element gefunden");
-//     if (!document.fullscreenElement) {
-//         if (normCanvRes != fullscreenCanvRes) reloadRes(fullscreenCanvRes);
-
-//         elem.requestFullscreen().catch((err) => {
-//             alert("Error attempting to enable full-screen mode: ${err.message} (${err.name})");
-//         });
-
-//         // DESIGN VERÄNDERUNG FÜR BUTTONS
-//         let full_btn = document.getElementsByClassName("fullscreen-button");
-//         Array.from(full_btn).forEach((e) => (e.style.backgroundImage = "url('IconExitFullscreen.png')"));
-
-//         // Dropdown-Button ausblenden
-//         let dropdownBtn = document.getElementsByClassName("dynamic-select-header");
-//         Array.from(dropdownBtn).forEach((e) => e.classList.add("hidden-important"));
-
-//         // Border ausblenden
-//         document.getElementById(id).classList.add("hide-border-important");
-
-//         // Beschriftungstext gross machen
-//         document.querySelectorAll(".canvas-lable").forEach(e => e.style.fontSize = "5.5rem");
-
-//         // bugfix für Edge
-//         if (navigator.userAgent.includes("Edg")) {
-//             overlay.style.display = "block";
-//         }
-//     } else {
-//         document.exitFullscreen();
-//     }
-// }
-
-// let lastFullscreenEl; // zum merken des Fullscreen elements
-// document.addEventListener("fullscreenchange", (event) => {
-//     // Funktion die erkennt wenn Fullscreen beendet wird und Auflösung zurücksetzt
-//     if (document.fullscreenElement) {
-//         // Vollbild gestartet → Element merken
-//         lastFullscreenEl = document.fullscreenElement;
-//     } else {
-//         reloadRes(normCanvRes);
-
-//         // DESIGN ZURÜCKSETZE
-//         full_btn = document.getElementsByClassName("fullscreen-button");
-//         Array.from(full_btn).forEach((e) => (e.style.backgroundImage = "url('IconFullscreen.png')"));
-
-//         // // Dropdown-Button einblenden
-//         let dropdownBtn = document.getElementsByClassName("dynamic-select-header");
-//         Array.from(dropdownBtn).forEach((e) => e.classList.remove("hidden-important"));
-
-//         // Border einblenden
-//         lastFullscreenEl.classList.remove("hide-border-important");
-
-//         // Beschriftungstext klein machen
-//         document.querySelectorAll(".canvas-lable").forEach(e => e.style.fontSize = "1.2rem");
-
-//         // Safari Bugfix
-//         if (navigator.userAgent.includes("Safari") && !navigator.userAgent.includes("Chrome")) {
-//             location.reload();
-//         }
-
-//         // für Bugfix für Edge:
-//         overlay.style.display = "none"; // Zurücksetzen des Hintergrundes
-//     }
-// });
-
-// CHAT GPT
 function fullscreen(id) {
     const elem = document.getElementById(id);
 
@@ -183,9 +116,6 @@ document.addEventListener("fullscreenchange", () => {
         overlay.style.display = "none";
     }
 });
-
-// CHAT GPT
-
 
 const inverse_check = document.querySelector("#Inverse");
 inverse_check.checked = false;
