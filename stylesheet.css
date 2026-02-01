@@ -41,7 +41,7 @@
 }
 
 :root {
-    --stroke-with: 1.5px;
+    --stroke-with: 2px;
     --UI-gray-light: #DDD;
     --UI-gray-dark: #333;
     --radius: 0.5rem;
@@ -90,7 +90,8 @@ h1 {
 
 .fluid-container {
     /* max-width: 2200px; */
-    max-width: 1600px;
+    max-width: 2200px;
+    /* vorher 1600 */
     width: 94%;
     transition: width 0.2s ease;
     margin-left: auto;
@@ -209,6 +210,7 @@ h1 {
     max-width: 400px;
 }
 
+
 .klammerSVG {
     fill: none;
     stroke: var(--border-color);
@@ -216,6 +218,7 @@ h1 {
     vector-effect: non-scaling-stroke;
     stroke-width: var(--stroke-with);
 }
+
 
 .canvas-lable{
     position: absolute;

@@ -34,8 +34,9 @@ function getBoundingClientRectWithMargin(element) {
 function runScript() {
     if (!itemWide[0] || !itemNarrow[0] || !klammer[0]) return;
 
-    // 40% aber nicht mehr als 200px
-    const cc_w = Math.min(itemWide[0].getBoundingClientRect().width * 0.4, 200);
+    const max_width_px = 320;
+    // 40% aber nicht mehr als max_width_px 
+    const cc_w = Math.min(itemWide[0].getBoundingClientRect().width * 0.4, max_width_px);
     const cc_h = cc_w * (9 / 16);
 
     // Nur setzen, wenn Wert sich ändert
