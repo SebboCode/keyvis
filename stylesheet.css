@@ -592,3 +592,25 @@ input[type="range"]:focus { outline: none; }
 }
 
 #UI-box-2:hover .question { display: block; }
+
+#Linear-Key-Button {
+    font-family: 'CabinetGrotesk-Regular';
+    font-size: 13pt;
+    color: inherit;
+    border-radius: var(--radius);
+    background-color: transparent;
+    border: var(--stroke-with) solid #777;
+    /* border: none; */
+    /* margin-left: 1.6rem; */
+}
+
+#Linear-Key-Button:hover {
+    font-family: 'CabinetGrotesk-Regular';
+    font-size: 13pt;
+    color: var(--color-two);
+    border-radius: var(--radius);
+    background-color: transparent;
+    border: var(--stroke-with) solid var(--color-two);
+    /* border: none; */
+    /* margin-left: 1.6rem; */
+}
